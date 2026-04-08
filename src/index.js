@@ -7,11 +7,6 @@ $(document).ready(function() {
         $('#mas_informacion').css('display', 'flex');
 
         $("#mas_informacion").animate({top: 96}, 500);
-
-        $('#oscurecer').show();
-        $('#oscurecer').css('position', 'absolute');
-
-
     });
 
     //Hacer que se esconda el div al pulsar fuera de el.
@@ -22,7 +17,6 @@ $(document).ready(function() {
         if (!container.is(e.target) && container.has(e.target).length === 0) 
         {
             container.hide();
-            $('#oscurecer').hide();
         }
     });
 
@@ -35,11 +29,6 @@ $(document).ready(function() {
         $('#mas_informacion2').css('display', 'flex');
 
         $("#mas_informacion2").animate({top: 96}, 500);
-
-        $('#oscurecer').show();
-        $('#oscurecer').css('position', 'absolute');
-
-
     });
     
 
@@ -50,7 +39,6 @@ $(document).ready(function() {
         if (!container.is(e2.target) && container.has(e2.target).length === 0) 
         {
             container.hide();
-            $('#oscurecer').hide();
         }
     });
 
