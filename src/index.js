@@ -14,6 +14,20 @@ $(document).ready(function() {
 
     });
 
+    $('#mas_informacion2').hide();
+     $('#oscurecer').hide();
+	$('.ver2').click(function(){
+        $("#mas_informacion2").css({top: 1000});
+        $('#mas_informacion2').show();
+        $('#mas_informacion2').css('display', 'flex');
+
+        $("#mas_informacion2").animate({top: 96}, 500);
+
+        $('#oscurecer').show();
+        $('#oscurecer').css('position', 'absolute');
+
+
+    });
     
 
     //Hacer que se esconda el div al pulsar fuera de el.
@@ -21,12 +35,27 @@ $(document).ready(function() {
     {
         var container = $("#mas_informacion");
 
-        // if the target of the click isn't the container nor a descendant of the container
-        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        if (!container.is(e.target) && container.has(e.target).length === 0 && container != $("#mas_informacion2")) 
         {
             container.hide();
-            $('#oscurecer').hide();
+            if(container != $("#mas_informacion2")){
+                $('#oscurecer').hide();
+            }
         }
     });
+
+    $(document).mouseup(function(e) 
+    {
+        var container = $("#mas_informacion2");
+        
+        if (!container.is(e.target) && container.has(e.target).length === 0 && container != $("#mas_informacion") ) 
+        {
+            container.hide();
+            if(container == $("#mas_informacion2")){
+                $('#oscurecer').hide();
+            }
+        }
+    });
+
 
 });
