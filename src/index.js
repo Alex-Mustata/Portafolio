@@ -14,6 +14,19 @@ $(document).ready(function() {
 
     });
 
+    //Hacer que se esconda el div al pulsar fuera de el.
+    $(document).mouseup(function(e) 
+    {
+        var container = $("#mas_informacion");
+
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            container.hide();
+            $('#oscurecer').hide();
+        }
+    });
+
+
     $('#mas_informacion2').hide();
      $('#oscurecer').hide();
 	$('.ver2').click(function(){
@@ -30,32 +43,15 @@ $(document).ready(function() {
     });
     
 
-    //Hacer que se esconda el div al pulsar fuera de el.
-    $(document).mouseup(function(e) 
-    {
-        var container = $("#mas_informacion");
-
-        if (!container.is(e.target) && container.has(e.target).length === 0 && container != $("#mas_informacion2")) 
-        {
-            container.hide();
-            if(container != $("#mas_informacion2")){
-                $('#oscurecer').hide();
-            }
-        }
-    });
-
-    $(document).mouseup(function(e) 
+    $(document).mouseup(function(e2) 
     {
         var container = $("#mas_informacion2");
         
-        if (!container.is(e.target) && container.has(e.target).length === 0 && container != $("#mas_informacion") ) 
+        if (!container.is(e2.target) && container.has(e2.target).length === 0) 
         {
             container.hide();
-            if(container != $("#mas_informacion")){
-                $('#oscurecer').hide();
-            }
+            $('#oscurecer').hide();
         }
     });
-
 
 });

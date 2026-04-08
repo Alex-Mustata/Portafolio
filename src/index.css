@@ -53,7 +53,7 @@ h2, h3, h4, h5{
 
 
 .iconos:hover, .botones_fotos:hover{
-    filter: invert(100%);
+    filter: invert(0%);
     cursor: pointer;
 }
 
