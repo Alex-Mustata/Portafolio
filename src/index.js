@@ -51,7 +51,7 @@ $(document).ready(function() {
         if (!container.is(e.target) && container.has(e.target).length === 0 && container != $("#mas_informacion") ) 
         {
             container.hide();
-            if(container == $("#mas_informacion2")){
+            if(container != $("#mas_informacion")){
                 $('#oscurecer').hide();
             }
         }
