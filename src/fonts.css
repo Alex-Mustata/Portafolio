@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "TEXTO";
+  src: url("/fonts/Cocogoose-Classic-Medium-trial.ttf") format("truetype"), url("/fonts/Cocogoose-Classic-ExtraBold-trial.ttf") format("truetype");
+
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TITULO";
+  src: url("/fonts/Conthrax-SemiBold.otf") format("opentype");
+
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "TEXTO", sans-serif;
+}
+
+h2{
+    font-family: "TITULO", sans-serif;
+    font-size: clamp(50px, 5vw ,75px);
+}
+
+h3{
+    font-family: "TEXTO", sans-serif;
+    font-size: 30px;
+}

@@ -1,0 +1,56 @@
+.aumentar{
+    animation: aumentar 3s forwards;
+}
+
+@keyframes aumentar {
+    0% {
+        height: 55px;
+        width: 0;
+    }
+
+    100% {
+        height: 500px;
+        width: 85%;
+    }
+}
+
+.aumentar_altura{
+    animation: aumentar_altura 3s forwards;
+}
+@keyframes aumentar_altura {
+    0% {
+        height: -55px;
+    }
+
+    100% {
+        height: 500px;
+    }
+}
+
+.volver_aumentar{
+    animation: volver_aumentar 4s forwards;
+}
+@keyframes volver_aumentar {
+    0% {
+        height: 500px;
+        width: 85%;
+    }
+
+    100% {
+        height: 55px;
+        width: 0;
+    }
+}
+
+.volver_aumentar_altura{
+    animation: volver_aumentar_altura 4s forwards;
+}
+@keyframes volver_aumentar_altura {
+    0% {
+        height: 500px;
+    }
+
+    100% {
+        height: -55px;
+    }
+}

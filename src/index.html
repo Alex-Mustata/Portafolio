@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/animaciones_proyectos.css">
+</head>
+
+<body class="bg-slate-800 text-white">
+    <section class="w-full h-screen pt-30">
+
+
+        <div class="w-full h-1/3 flex justify-center">
+            <div class="w-63 h-63 border-10 border-blue-500 rounded-full mt-10 bg-no-repeat bg-center bg-contain bg-size-[200px]  bg-cover bg-center bg-[url(imagenes/fotoCVMejorado.jpg)]"></div>
+        </div>
+
+        <div class="w-full h-1/6 flex justify-evenly relative top-10">
+
+            <div class="w-1/5 h-full"></div>
+
+            <a href="https://www.linkedin.com/in/alexandrus-stelian-mustata-953125274/" class="h-17">
+                <button
+                    class="cursor-pointer w-75 h-17 border-5 rounded-xl bg-no-repeat bg-center bg-contain bg-size-[200px] bg-[url(imagenes/linkedin.png)] bg-cover bg-center hover:bg-[url(imagenes/linkedin_hover.png)] hover:border-[#0a66c2]"></button>
+            </a>
+
+            <a href="https://github.com/Alex-Mustata" class="h-17">
+                <button
+                    class="cursor-pointer w-75 h-17 border-5 rounded-xl bg-no-repeat bg-center bg-contain bg-size-[200px] bg-[url(imagenes/github.png)] bg-cover bg-center hover:bg-[url(imagenes/github_hover.png)] hover:border-black"></button>
+            </a>
+
+            <a href="imagenes/CV - Alexandrus Stelian Mustata .pdf" class="h-17">
+                <button
+                    class="cursor-pointer w-75 h-17 border-5 rounded-xl bg-no-repeat bg-center bg-contain bg-size-[200px] bg-[url(imagenes/cv.png)] bg-cover bg-center hover:bg-[url(imagenes/cv_hover.png)] hover:border-[#db0000]"></button>
+            </a>
+
+            <div class="w-1/5 h-full"></div>
+
+        </div>
+
+        <div class="w-full h-1/2 flex flex-col items-center">
+
+            <div class="w-245 h-50 border-4 border-purple-500 rounded-xl flex justify-center items-center text-center">
+                <div id="controls-carousel" class="relative w-full h-[25%]" data-carousel="slide"
+                    data-carousel-interval="2200">
+                    <div class="relative h-50 overflow-hidden rounded-base">
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <h3>Programador Full Stack</h3>
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <h3>Estudiante de Desarrollo de Aplicaciones Multiplataforma</h3>
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <h3>Desarrollador Junior</h3>
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <h3>Persona dinámica y resolutiva</h3>
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <h3>Amante de la tecnología</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="w-full h-screen flex justify-center items-center mt-100">
+
+        <div class="w-400 h-200 border-5 rounded-bl-[90px]  rounded-tr-[90px] flex flex-col justify-evenly">
+            <span
+                class="w-200 h-30 bg-slate-800 border-10 border-blue-500 rounded-full flex justify-center items-center absolute left-1/2 -translate-x-1/2 top-345">
+                <h2>BACK - END</h2>
+            </span>
+
+            <div class="w-1/.5 h-200 m-10 mt-20 flex flex-col items-center">
+                <div class="w-[50vw] h-58 mt-10 flex justify-evenly overflow-hidden">
+
+                    <button
+                        class="w-58 h-full border-5 hover:border-blue-500 focus:border-blue-500 bg-[url(imagenes/python_blanco.png)] bg-no-repeat bg-center bg-contain bg-size-[180px] hover:bg-[url(imagenes/python_icon.png)] focus:bg-[url(imagenes/python_icon.png)] rounded-full cursor-pointer"
+                        onclick="mover_izquierda(1, 'izquierda1','centro1','derecha1', 'pergamino1', 'python');"
+                        id="izquierda1"></button>
+
+                    <button
+                        class="w-58 h-full border-5 hover:border-blue-500 focus:border-blue-500 bg-[url(imagenes/java_blanco.png)] bg-no-repeat bg-center bg-contain bg-size-[180px] hover:bg-[url(imagenes/java_icon.png)] focus:bg-[url(imagenes/java_icon.png)] rounded-full cursor-pointer flex justify-center items-center"
+                        onclick="mover_centro(1, 'izquierda1', 'centro1', 'derecha1', 'pergamino1', 'java');"
+                        id="centro1"></button>
+
+                    <button
+                        class="w-58 h-full border-5 hover:border-blue-500 focus:border-blue-500 bg-[url(imagenes/sql_blanco.png)] bg-no-repeat bg-center bg-contain bg-size-[150px] hover:bg-[url(imagenes/sql_icon.png)] focus:bg-[url(imagenes/sql_icon.png)] rounded-full cursor-pointer flex justify-center items-center"
+                        onclick="mover_derecha(1, 'izquierda1','centro1','derecha1', 'pergamino1', 'sql');"
+                        id="derecha1"></button>
+
+                </div>
+
+                <div class="w-[80vw] opacity-0 h-80 border-5 border-blue-500  mt-10 flex overflow-hidden flex flex-col text-center pointer-events-none"
+                    id="pergamino1">
+
+
+                    <div class="w-[80vw] h-80 p-5">
+
+                        <h3 id="nombre">NOMBRE DE LA COSA</h3>
+
+                        <p class="text-[20px] text-justify h-40 mb-3" id="texto">
+                        </p>
+
+                        <button
+                            class="text-xl w-100 h-15 border-3 text-white hover:border-red-600 hover:text-red-600 rounded-xl cursor-pointer"
+                            onclick="volver('izquierda1','centro1','derecha1', 'pergamino1');">Volver</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="w-full h-screen flex justify-center items-center mt-100">
+
+        <div class="w-400 h-200 border-5 rounded-bl-[90px]  rounded-tr-[90px] flex flex-col justify-evenly">
+            <span
+                class="w-200 h-30 bg-slate-800 border-10 border-blue-500 rounded-full flex justify-center items-center absolute left-1/2 -translate-x-1/2 top-682">
+                <h2>FRONT - END</h2>
+            </span>
+
+            <div class="w-1/.5 h-200 m-10 mt-20 flex flex-col items-center">
+                <div class="w-[50vw] h-58 mt-10 flex justify-evenly overflow-hidden">
+
+                    <button
+                        class="w-58 h-full border-5 hover:border-blue-500 focus:border-blue-500 bg-[url(imagenes/javascript_blanco.png)] bg-no-repeat bg-center bg-contain bg-size-[160px] hover:bg-[url(imagenes/javascript_icon.png)] focus:bg-[url(imagenes/javascript_icon.png)] rounded-full cursor-pointer"
+                        onclick="mover_izquierda(2,'izquierda2', 'centro2', 'derecha2', 'pergamino2', 'javascript');"
+                        id="izquierda2"></button>
+
+                    <button
+                        class="w-58 h-full border-5 hover:border-blue-500 focus:border-blue-500 bg-[url(imagenes/tailwind_blanco.png)] bg-no-repeat bg-center bg-contain bg-size-[180px] hover:bg-[url(imagenes/tailwind_icon.webp)] focus:bg-[url(imagenes/tailwind_icon.webp)] rounded-full cursor-pointer"
+                        onclick="mover_centro(2,'izquierda2', 'centro2', 'derecha2', 'pergamino2', 'tailwind');"
+                        id="centro2"></button>
+
+                    <button
+                        class="w-58 h-full border-5 hover:border-blue-500 focus:border-blue-500 bg-[url(imagenes/bootstrap_blanco.png)] bg-no-repeat bg-center bg-contain bg-size-[160px] hover:bg-[url(imagenes/bootstrap_icon.png)] focus:bg-[url(imagenes/bootstrap_icon.png)] rounded-full cursor-pointer"
+                        onclick="mover_derecha(2,'izquierda2', 'centro2', 'derecha2', 'pergamino2', 'bootstrap');"
+                        id="derecha2"></button>
+
+                </div>
+
+                <div class="w-[80vw] opacity-0 h-80 border-5 border-blue-500 mt-10 flex overflow-hidden flex flex-col text-center pointer-events-none"
+                    id="pergamino2">
+
+
+                    <div class="w-[80vw] h-80 p-5">
+
+                        <h3 id="nombre2">NOMBRE DE LA COSA</h3>
+
+                        <p class="text-[20px] text-justify h-40 mb-3" id="texto2">
+                        </p>
+
+                        <button
+                            class="text-xl w-100 h-15 border-3 text-white hover:border-red-600 hover:text-red-600 rounded-xl cursor-pointer"
+                            onclick="volver('izquierda2','centro2','derecha2', 'pergamino2');">Volver</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="w-full min-h-screen flex justify-center items-center mt-100">
+
+        <div class="w-400 h-200 flex flex-col">
+            <span
+                class="w-200 h-30 bg-slate-800 border-10 border-blue-500 rounded-full flex justify-center items-center absolute left-1/2 -translate-x-1/2 top-1019">
+                <h2>PROYECTOS</h2>
+            </span>
+
+            <div class="w-1/.5 m-10 mt-20 flex flex-col border-black">
+
+                <!--PROYECTO 1-->
+                <div class="w-full h-55 flex self-start overflow-hidden " id="contenedor_proyecto1">
+
+                    <div class="bg-slate-800 z-100 h-55 rounded-full ">
+                        <button
+                            class="w-58 h-55 border-5 hover:border-blue-500 z-10 focus:border-blue-500 bg-[url(imagenes/free_news.png)] bg-no-repeat bg-center bg-contain bg-size-[250px] hover:bg-[url(imagenes/free_news.png)] focus:bg-[url(imagenes/free_news.png)] rounded-full cursor-pointer"
+                            onclick="alargarProyecto('proyecto1', 'contenedor_proyecto1', 'btn_proyecto1');"
+                            id="btn_proyecto1"></button>
+                    </div>
+
+                    <div class="w-0 h-55 border-2 border-5 border-blue-500 relative -left-30 flex flex-col items-center text-center p-5 hidden overflow-hidden"
+                        id="proyecto1">
+
+                        <h3 id="nombre">Free News</h3>
+
+                        <div class="w-[75%] mt-10 mb-3 overflow-auto">
+                            <p class="text-[20px] h-40 text-justify mr-10">Free News es un programa de ordenador creado con el proposito de mantenerse actualizado de manera gratuita, saltándose el muro de pago de diversos portales de noticias (El País, ABC, Diario Sur, etc). Este software lo desarrolle como un proyecto rápido durante las vacaciones de Navidad. <br><br> Consta de dos partes: La parte lógica, que esta hecha con Python y diversas librerías (BeautifulSoup y urllib.request son las más importantes) y la parte de interfaz, construida con JavaFX. Es un proyecto al que le tengo mucho cariño, porque aunque aún este en un estado mejorable, me sirvió de gran manera para mejorar mis habilidades en Python y el desarrollo de interfaces en Software de ordenador.</p>
+                        </div>
+
+                        <div class="w-full mt-10 flex justify-evenly">
+
+                            <a href="https://github.com/Alex-Mustata/FreeNews-Escritorio">
+                                <button
+                                class="text-xl w-75 h-15 border-3 text-white hover:border-green-600 hover:text-green-600 rounded-xl cursor-pointer">Ir
+                                GitHub</button>
+                            </a>
+                            <button class="text-xl w-75 h-15 border-3 text-white hover:border-red-600 hover:text-red-600 rounded-xl cursor-pointer" onclick="volverProyecto('proyecto1', 'contenedor_proyecto1');">Volver</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--PROYECTO 2-->
+                <div class="w-full h-55 flex justify-end mt-10 overflow-hidden" id="contenedor_proyecto2">
+
+                    <div class="w-0 h-55 border-5 border-blue-500 relative left-30 flex flex-col items-center text-center p-5 hidden overflow-hidden"
+                        id="proyecto2">
+                        <h3 id="nombre">Probador Virtual</h3>
+
+                        <div class="w-[80%] h-[500px] mt-10 mb-3 overflow-auto">
+                            <p class="text-[20px] h-40 mr-10 text-justify">
+                                Probador Virtual es mi aplicación que aún se encuentra en proceso de desarrollo. <br><br> A quién no le ha pasado alguna vez estar comprando y probando ropa y llegar a probarse un conjunto increíble, pero hay un pequeño problema, no tienes el dinero suficiente. Así que te haces una foto y se guarda en tu galería el outfit tan bello que te probaste. Pero el tiempo pasa y la galería se va llenando de fotos y vídeos, y el conjunto que te ibas a comprar se queda en el olvido de tu mente y en el batiburrillo de imagenes. ¡Probador virtual soluciona justo ese problema! <br><br>
+                                Ahora podrás guardar tus conjuntos en una sola aplicación, junto a la información de cada artículo y producto y podrás consultarlo siempre que quieras, para que la próxima vez que vayas de compra no se te olvide la ropa que te quedaba bien. <br><br>
+                                Está aplicación será mi TFG y usa tecnologías como SQLite, Android Studio y más. 
+                            
+                            </p>
+                        </div>
+
+                        <div class="w-full mt-10 flex justify-evenly">
+
+                            <button class="text-xl w-75 h-15 border-3 text-white hover:border-red-600 hover:text-red-600 rounded-xl cursor-pointer" onclick="volverProyecto('proyecto2', 'contenedor_proyecto2')"> Volver </button>
+
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 z-100 h-55 rounded-full ">
+                        <button
+                            class="w-58 h-55 border-5 hover:border-blue-500 z-10 focus:border-blue-500 bg-[url(imagenes/pv.png)] bg-no-repeat bg-center bg-contain bg-size-[250px] hover:bg-[url(imagenes/pv.png)] focus:bg-[url(imagenes/pv.png)] rounded-full cursor-pointer"
+                            onclick="alargarProyecto('proyecto2', 'contenedor_proyecto2', 'btn_proyecto2');"
+                            id="btn_proyecto2"></button>
+                    </div>
+
+                </div>
+
+                <!--PROYECTO 3-->
+                <div class="w-full h-55 flex self-start overflow-hidden mt-10" id="contenedor_proyecto3">
+
+                    <div class="bg-slate-800 z-100 h-55 rounded-full ">
+                        <button
+                            class="w-58 h-55 border-5 hover:border-blue-500 z-10 focus:border-blue-500 bg-[url(imagenes/lector.png)] bg-no-repeat bg-center bg-contain bg-size-[140px] hover:bg-[url(imagenes/lector.png)] focus:bg-[url(imagenes/lector.png)] rounded-full cursor-pointer"
+                            id="btn_proyecto3"
+                            onclick="alargarProyecto('proyecto3', 'contenedor_proyecto3', 'btn_proyecto3');"></button>
+                    </div>
+
+                    <div class="w-0 h-55 border-2 border-5 border-blue-500 relative -left-30 flex flex-col items-center text-center p-5 hidden  overflow-hidden"
+                        id="proyecto3">
+
+                        <h3 id="nombre">Lector de alimentos</h3>
+
+                        <div class="w-[75%] mt-10 mb-3 overflow-auto">
+                            <p class="text-[20px] text-justify h-40 mr-10">
+                                Aplicación aún en desarrollo. <br><br>
+                                Lector de alimentos lee los códigos de barras de productos alimenticios y muestra el valor nutricional. Consta de una comunicación con la API OpenFoodFacts y una base de datos propia para agregar alimentos que no se encuentran en la API. <br><br>
+                                Está aplicación me enseña como usar una API para una aplicación de Android y la utilización de base de datos en la nube.
+                            </p>
+                        </div>
+
+                        <div class="w-full mt-10 flex justify-evenly">
+
+                            <button
+                                class="text-xl w-75 h-15 border-3 text-white hover:border-green-600 hover:text-green-600 rounded-xl cursor-pointer">Ir
+                                Proyecto</button>
+                            <button
+                                class="text-xl w-75 h-15 border-3 text-white hover:border-green-600 hover:text-green-600 rounded-xl cursor-pointer">Ir
+                                GitHub</button>
+                            <button
+                                class="text-xl w-75 h-15 border-3 text-white hover:border-red-600 hover:text-red-600 rounded-xl cursor-pointer"
+                                onclick="volverProyecto('proyecto3', 'contenedor_proyecto3');">Volver</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="w-full h-screen flex justify-center items-center mt-100">
+
+        <div class="w-400 h-200 border-5 rounded-bl-[90px]  rounded-tr-[90px] flex flex-col justify-evenly">
+            <span
+                class="w-200 h-30 bg-slate-800 border-10 border-blue-500 rounded-full flex justify-center items-center absolute left-1/2 -translate-x-1/2 top-1364">
+                <h2>CURSOS</h2>
+            </span>
+
+            <div class="grid grid-cols-3 gap-3">
+                <div class="flex flex-col justify-center items-center">
+                    <div class="flex justify-center text-center mb-5">
+                        <img src="imagenes/badge_python1.png" alt="" class="w-10 mr-5">
+                        <h3>Fundamentos Python I</h3>
+                    </div>
+                    <img src="imagenes/certificado_python1.jpg" alt="" class="w-100">
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <div class="flex justify-center text-center mb-5">
+                        <img src="imagenes/badge_python2.png" alt="" class="w-10 mr-5">
+                        <h3>Fundamentos Python II</h3>
+                    </div>
+                    <img src="imagenes/certificado_python2.jpg" alt="" class="w-100">
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <div class="flex justify-center text-center mb-5">
+                        <img src="imagenes/badge_python3.png" alt="" class="w-10 mr-5">
+                        <h3>Data Science Python</h3>
+                    </div>
+                    <img src="imagenes/certificado_python3.jpg" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="javascript_json/proyectos.js"></script>
+    <script src="javascript_json/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+
+</body>
+
+</html>

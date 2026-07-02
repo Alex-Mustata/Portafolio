@@ -1,0 +1,151 @@
+
+/*CONOCIMIENTOS*/
+#conocimientos_abajo{
+    animation: movimiento 5s infinite linear;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+/*MOVER BOTONES*/
+.mover_izquierda{
+    animation: mover_izquierda 2s forwards;
+}
+@keyframes mover_izquierda {
+    0%{
+        cursor: default;
+        transform: translateX(0);
+    }
+
+    100%{
+        cursor: default;
+        transform: translateX(290px);
+    }
+}
+
+.mover_derecha{
+    animation: mover_derecha 2s forwards;
+}
+@keyframes mover_derecha {
+    0%{
+        cursor: default;
+        transform: translateX(0);
+    }
+
+    100%{
+        cursor: default;
+        transform: translateX(-290px);
+    }
+}
+
+/*DESAPARECER BOTONES*/
+.desaparecer{
+    animation: desaparecer 2s forwards;
+}
+@keyframes desaparecer {
+    0%{
+        cursor: default;
+        opacity: 100;
+    }
+    50%{
+        cursor: default;
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100%{
+        cursor: default;
+        opacity: 0;
+        transform: translateY(300px);
+    }
+}
+
+/*REAPARECER BOTONES*/
+.reaparecer{
+    animation: reaparecer 2s forwards;
+}
+@keyframes reaparecer {
+    0%{
+        cursor: pointer;
+        opacity: 0;
+    }
+    50%{
+        cursor: pointer;
+        opacity: 100;
+    }
+    100%{
+        cursor: pointer;
+    }
+}
+
+.volver_izquierda{
+    animation: volver_izquierda 2s forwards;
+}
+@keyframes volver_izquierda {
+    0%{
+        cursor: pointer;
+        transform: translateX(290px);
+    }
+
+    100%{
+        cursor: pointer;
+        transform: translateX(0);
+    }
+}
+
+.volver_derecha{
+    animation: volver_derecha 2s forwards;
+}
+@keyframes volver_derecha {
+    0%{
+        cursor: pointer;
+        transform: translateX(-290px);
+    }
+
+    100%{
+        cursor: pointer;
+        transform: translateX(0);
+    }
+}
+
+/*CAJA TEXTO*/
+.abrir_pergamino{
+    animation: abrir_pergamino 1s forwards;
+}
+@keyframes abrir_pergamino {
+    0%{
+        opacity: 0%;
+        clip-path: inset(0 50% 0 50%);
+
+    }
+    100%{
+        opacity: 100%;
+        clip-path: inset(0 0 0 0);
+        pointer-events: all;
+    }
+}
+
+.cerrar_pergamino{
+    animation: cerrar_pergamino 1s forwards;
+}
+@keyframes cerrar_pergamino {
+    0%{
+        opacity: 100%;
+        clip-path: inset(0 0 0 0);
+    }
+    100%{
+        opacity: 0%;
+        clip-path: inset(0 50% 0 50%);
+        pointer-events: none;
+
+    }
+}

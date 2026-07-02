@@ -1,0 +1,31 @@
+{
+    "python": {
+        "nombre": "Python",
+        "texto": "Python es mi lenguaje favorito de programación debido a su fácil sintaxis, múltiples usos y sencilla usabilidad. Aprendí a usar Python en período extraescolar, con los cursos disponibles en Cisco, aunque ya disponía de conocimientos sobre el uso de este lenguaje previo a completar la formación. \nMi manejo con Python es amplio: desde control de archivos y uso de librerías como BeautifulSoup y urllib.request, que me permite conseguir información de documentos HTML y JavaScript (En mi proyecto, FreeNews, muestro mi habilidad y creatividad con estás tecnologías); hasta análisis de datos, donde con el curso de Cisco, Data Science Essentials with Python, me capacité en Pandas y Matplotlib."
+    },
+
+    "java": {
+        "nombre": "Java",
+        "texto": "Empleo Java cuando necesito desarrollar aplicaciones para dispositivos Android (móviles, relojes, etc.) y cuando necesito conectividad entre software y páginas web con bases de datos MySQL. Ambas capacitaciones las aprendí durante mi formación en el Grado Superior de Desarrollo de Aplicaciones Multiplataforma y las mejoré con diversos proyectos. Mi TFG, Probador Virtual, emplea Java, al ser una aplicación para celulares."
+    },
+
+    "sql": {
+        "nombre": "SQL",
+        "texto": "Al igual que Java, SQL fue una tecnología troncal enseñada en mi Grado Superior, aunque ya tenía conocimientos previos al haber aprendido en menor medida a usar PostgreSQL. Mi entendimiento en SQL abarca PL/SQL (Base de datos Oracle), MySQL y SQLite (Bases de datos para dispositivos móviles) y tengo intéres en volver a aprender PostgreSQL y empezar a usar bases de datos NoSQL."
+    },
+
+    "javascript": {
+        "nombre": "JavaScript",
+        "texto": "Junto a HTML y CSS, JavaScript es uno de los pilares del desarrollo de páginas y aplicaciones web. He realizado diversos proyectos con JavaScript a través de mi primer año de DAM y esto me ha permitido aprender este vital lenguaje de programación, por ejemplo para crear las animaciones de este portfolio."
+    },
+
+    "tailwind": {
+        "nombre": "Tailwind",
+        "texto": "Tailwind es el framework usado para este mismo portfolio y unas de mis tecnologías preferidas a la hora de crear páginas web. Aunque no poseo gran cantidad de proyectos donde haya usado Tailwind de manera incesante, lo aprendido, sobre todo en el desarrollo de este portofolio, me ha hecho dar cuenta de su importancia en Front-End y como debo seguir perfeccionando su uso para mejorar mis habilidades de creación de webs."
+    },
+
+    "bootstrap": {
+        "nombre": "Bootstrap",
+        "texto": "Bootstrap fue el primer framework aprendido de CSS en mi Grado Superior y el investigar sus características me enseño el mundo de posibilidades que existen para el desarrollo de páginas web."
+    }
+}
